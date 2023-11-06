@@ -8,4 +8,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        println("On destroy action triggered!")
+    }
 }
